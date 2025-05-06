@@ -1,0 +1,22 @@
+
+export default function Home() {
+  return (
+    <>
+      <main className="flex justify-center items-center h-screen">
+        <h1>SuperTip</h1>
+      </main>
+      <section className="flex justify-center items-center h-screen">
+        <h1>Features</h1>
+      </section>
+      <section className="flex justify-center items-center h-screen">
+        <h1>Pricing</h1>
+      </section>
+      <section className="flex justify-center items-center h-screen">
+        <h1>Contact</h1>
+      </section>
+      <footer className="flex justify-center items-center h-16 w-full bg-gray-200">
+        <h1>Footer</h1>
+      </footer>
+    </>
+  );
+}

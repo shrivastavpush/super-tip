@@ -1,5 +1,6 @@
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <SessionProvider refetchInterval={0} refetchOnWindowFocus={true}>
+          <Navbar />
           {children}
         </SessionProvider>
       </body>
