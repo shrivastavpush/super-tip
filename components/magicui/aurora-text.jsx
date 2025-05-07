@@ -17,7 +17,7 @@ export const AuroraText = memo(({
   };
 
   return (
-    <h1 className={`relative inline-block ${className}`}>
+    <h1 className={`relative inline-block text-center ${className}`}>
       <span className="sr-only">{children}</span>
       <span
         className="text-8xl font-extrabold relative animate-aurora bg-[length:200%_auto] bg-clip-text text-transparent"
