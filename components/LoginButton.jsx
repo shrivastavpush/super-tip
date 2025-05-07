@@ -3,10 +3,15 @@
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button';
 
-const LoginButton = () => {
+const LoginButton = ({ variant = "default", name, className }) => {
     const router = useRouter();
     return (
-        <Button variant="default" onClick={() => router.push("/login")} className="bg-red-500 cursor-pointer">Sign In</Button>
+        <Button
+            variant={variant}
+            onClick={() => router.push("/login")}
+            className={`${className} cursor-pointer`}>
+            {name}
+        </Button>
     )
 }
 

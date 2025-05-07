@@ -1,10 +1,9 @@
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <>
-      <main className="flex justify-center items-center h-screen">
-        <h1>SuperTip</h1>
-      </main>
+      <Banner />
       <section className="flex justify-center items-center h-screen">
         <h1>Features</h1>
       </section>

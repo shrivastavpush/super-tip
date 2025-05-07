@@ -5,6 +5,7 @@ import LoginButton from './LoginButton'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import logo from '../public/logo.svg'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,11 +26,11 @@ const Navbar = () => {
   ]
 
   return (
-    <div className={`flex justify-between items-center py-2 px-6 bg-white rounded-full h-16 mx-auto fixed top-10 z-50 left-0 right-0 transition-all duration-500 ${scrolled ? 'border border-gray-200 shadow-sm w-[80%]' : 'border-0 shadow-none w-[90%]'}`}>
-      <div>
-        <Image src="/logo.png" alt="Logo" width={100} height={20} onClick={() => router.push("/")} className='cursor-pointer' />
-      </div>
-      <div>
+    <header className={`flex justify-between items-center py-2 px-6 bg-white rounded-full h-16 mx-auto fixed top-10 z-50 left-0 right-0 transition-all duration-500 ${scrolled ? 'border border-green-200/50 shadow-sm w-[75%]' : 'border-0 shadow-none w-[90%]'}`}>
+
+      <Image src={logo} alt="Logo" width={100} height={20} onClick={() => router.push("/")} className='cursor-pointer' />
+
+      <nav>
         <ul className='flex gap-4 text-sm'>
           {navList.map((item) => (
             <li key={item.name}>
@@ -37,9 +38,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-      </div>
-      <LoginButton />
-    </div>
+      </nav>
+
+      <LoginButton
+        variant="default"
+        name="Sign In"
+        className="bg-green-600 hover:bg-green-500" />
+    </header>
   )
 }
 
