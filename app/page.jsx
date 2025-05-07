@@ -1,8 +1,10 @@
 import Banner from "@/components/Banner";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export default function Home() {
   return (
     <>
+      <SmoothCursor />
       <Banner />
       <section className="flex justify-center items-center h-screen">
         <h1>Features</h1>

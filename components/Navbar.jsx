@@ -26,7 +26,12 @@ const Navbar = () => {
   ]
 
   return (
-    <header className={`flex justify-between items-center py-2 px-6 bg-white rounded-full h-16 mx-auto fixed top-10 z-50 left-0 right-0 transition-all duration-500 ${scrolled ? 'border border-green-200/50 shadow-sm w-[75%]' : 'border-0 shadow-none w-[90%]'}`}>
+    <header
+      className={`flex justify-between items-center py-2 px-6 rounded-full h-16 mx-auto fixed top-10 z-50 left-0 right-0 transition-all duration-500 border ${scrolled
+        ? 'bg-green-200/20 border-green-200/50 shadow-sm w-[75%]'
+        : 'bg-white border-green-100 shadow-none w-[90%]'
+        }`}
+    >
 
       <Image src={logo} alt="Logo" width={100} height={20} onClick={() => router.push("/")} className='cursor-pointer' />
 
@@ -34,7 +39,7 @@ const Navbar = () => {
         <ul className='flex gap-4 text-sm'>
           {navList.map((item) => (
             <li key={item.name}>
-              <Link href={item.href} className='text-gray-600 hover:text-gray-900 cursor-pointer'>{item.name}</Link>
+              <Link href={item.href} className='text-md font-medium tracking-wide text-gray-600 hover:text-gray-900 cursor-pointer transition-all duration-300'>{item.name}</Link>
             </li>
           ))}
         </ul>
