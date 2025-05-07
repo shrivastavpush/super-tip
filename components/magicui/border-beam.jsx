@@ -6,7 +6,7 @@ export const BorderBeam = ({
   className,
   size = 50,
   delay = 0,
-  duration = 5,
+  duration,
   colorFrom = "#ffaa40",
   colorTo = "#9c40ff",
   transition,

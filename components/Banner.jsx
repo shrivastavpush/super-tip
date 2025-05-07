@@ -4,7 +4,7 @@ import { AuroraText } from "./magicui/aurora-text"
 const Banner = () => {
 
   return (
-    <main className="flex justify-center items-center flex-col px-8 mx-auto relative transition-all duration-700 h-[80vh] w-full z-20">
+    <main className="flex justify-center items-center flex-col px-8 mx-auto relative h-[85vh] w-full z-20">
 
       <div className="absolute inset-0 bg-[radial-gradient(circle,_#e5e7eb_2px,_transparent_2px)] bg-[length:30px_30px] -z-10"></div>
 
