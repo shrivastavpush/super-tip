@@ -1,4 +1,7 @@
-import React from 'react'
+export const metadata = {
+    title: "Features",
+    description: "Features page"
+}
 
 const Features = () => {
     return (

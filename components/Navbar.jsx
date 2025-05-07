@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`flex justify-between items-center py-2 px-6 rounded-full h-16 mx-auto sticky top-10 z-50 left-0 right-0 transition-all duration-800 backdrop-blur-sm  ${scrolled
-        ? 'bg-green-200/50 border border-green-200/50 shadow-sm w-[75%]'
-        : 'bg-white shadow-none w-[90%]'
+      className={`flex justify-between items-center py-2 px-6 rounded-full h-16 mx-auto fixed top-10 z-50 left-0 right-0 transition-all duration-800 backdrop-blur-sm border ${scrolled
+        ? 'bg-green-200/50 border-green-200/50 shadow-sm w-[75%]'
+        : 'bg-white border-gray-200/50 shadow-none w-[90%]'
         }`}
     >
 
