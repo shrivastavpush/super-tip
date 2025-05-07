@@ -16,9 +16,9 @@ const Banner = () => {
       </p>
 
       <LoginButton
-        variant="default"
+        variant="outline"
         name="Get Started"
-        className="mt-8 px-6 py-4 text-md font-semibold bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300" />
+        className="mt-8 px-6 py-5 text-md font-semibold" />
     </main>
   )
 }

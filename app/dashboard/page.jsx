@@ -4,11 +4,6 @@ import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export const metadata = {
-  title: "Dashboard - View Your Tipping Data",
-  description: "Dashboard page"
-}
-
 // Inlined: fetchYoutubeChannelData
 async function fetchYoutubeChannelData() {
   try {

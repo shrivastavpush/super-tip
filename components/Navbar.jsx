@@ -46,9 +46,9 @@ const Navbar = () => {
       </nav>
 
       <LoginButton
-        variant="default"
+        variant="outline"
         name="Sign In"
-        className="bg-green-600 hover:bg-green-500" />
+        className="bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300" />
     </header>
   )
 }
