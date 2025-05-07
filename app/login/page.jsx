@@ -1,7 +1,8 @@
 import GoogleSignin from "@/components/GoogleSignin";
 
-export default function Login() {
+import { Suspense } from "react";
 
+export default function Login() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
@@ -14,7 +15,9 @@ export default function Login() {
           </p>
         </div>
 
-        <GoogleSignin />
+        <Suspense fallback={<div>Loading...</div>}>
+          <GoogleSignin />
+        </Suspense>
 
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">

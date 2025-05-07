@@ -3,11 +3,11 @@ import LoginButton from "./LoginButton"
 const Banner = () => {
 
   return (
-    <main className="flex justify-center items-center flex-col py-4 px-8 bg-gradient-to-t from-white to-gray-50  mx-auto relative transition-all duration-700 mt-28 h-[90vh] w-full z-20">
+    <main className="flex justify-center items-center flex-col py-4 px-8 bg-gradient-to-t from-white to-gray-50  mx-auto relative transition-all duration-700 h-[75vh] w-full z-20">
 
       {/* Animated glowing title with green gradient */}
       <h1 className="text-6xl font-extrabold bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 bg-clip-text text-transparent h-18">
-        Supertip
+        Super Tip
       </h1>
 
       {/* Modern subtitle with hover effect */}
