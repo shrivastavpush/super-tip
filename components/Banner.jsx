@@ -1,6 +1,6 @@
-import LoginButton from "./LoginButton"
-import { AuroraText } from "./magicui/aurora-text"
-import BackgroundGrid from "./Common/BackgroundGrid"
+import LoginButton from "@/components/LoginButton"
+import { AuroraText } from "@/components/magicui/aurora-text"
+import { BackgroundGrid } from "@/components/Common/BackgroundGrid"
 
 const Banner = () => {
 

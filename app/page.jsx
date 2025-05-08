@@ -2,8 +2,9 @@ import Banner from "@/components/Banner";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import ContactForm from "@/components/ContactForm";
-import BackgroundGrid from "@/components/Common/BackgroundGrid";
+import { BackgroundGrid } from "@/components/Common/BackgroundGrid";
 import Footer from "@/components/Footer";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export default function Home() {
   return (
@@ -29,22 +30,15 @@ export default function Home() {
         <h1>Pricing</h1>
       </section>
 
+      <FaqAccordion />
+
       {/* contact section */}
-      <section className='flex justify-center items-center flex-col px-8 mx-auto relative h-screen w-full z-20' id="contact">
+      <section className='flex justify-center items-center flex-col px-8 mx-auto relative h-[80vh] w-full z-20' id="contact">
 
         <BackgroundGrid />
         <ContactForm />
       </section>
 
-      {/* faq section */}
-      <section id="faq" className="flex justify-center items-center h-screen">
-        <h1>FAQ</h1>
-      </section>
-
-      {/* footer */}
-      {/* <footer className="flex justify-center items-center h-16 w-full bg-gray-200">
-        <h1>Footer</h1>
-      </footer> */}
       <Footer />
     </>
   );
