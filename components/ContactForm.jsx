@@ -6,10 +6,10 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { Textarea } from './ui/textarea';
-import { BorderBeam } from './magicui/border-beam';
+import { Textarea } from '@/components/ui/textarea';
+import { BorderBeam } from '@/components/magicui/border-beam';
 import { ArrowRight, Loader2 } from 'lucide-react';
-import FormField from './FormField';
+import FormField from '@/components/Common/FormField';
 
 // ✅ Schema defined once outside to avoid recomputing on render
 const contactSchema = z.object({

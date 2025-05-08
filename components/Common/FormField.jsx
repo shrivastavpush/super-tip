@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from './ui/input'
+import { Input } from '../ui/input'
 import { cn } from '@/lib/utils'
 
 const FormField = ({ id, label, register, error, type = 'text', autoComplete = 'off' }) => (
