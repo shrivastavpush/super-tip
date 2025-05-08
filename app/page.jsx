@@ -1,10 +1,14 @@
+import dynamic from "next/dynamic";
+
 import Banner from "@/components/Banner";
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { BackgroundGrid, BackgroundGridGreen } from "@/components/Common/BackgroundGrid";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import ContactForm from "@/components/ContactForm";
-import { BackgroundGrid } from "@/components/Common/BackgroundGrid";
-import Footer from "@/components/Footer";
-import FaqAccordion from "@/components/FaqAccordion";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+
+const Pricing = dynamic(() => import("@/components/Pricing"));
+const FaqAccordion = dynamic(() => import("@/components/FaqAccordion"));
+const ContactForm = dynamic(() => import("@/components/ContactForm"));
+const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
@@ -26,8 +30,10 @@ export default function Home() {
       </section>
 
       {/* pricing section */}
-      <section id="pricing" className="flex justify-center items-center h-screen bg-gray-50">
-        <h1>Pricing</h1>
+      <section className='flex justify-center items-center flex-col px-8 mx-auto relative w-full h-[70vh] z-20' id="pricing">
+        <BackgroundGridGreen />
+
+        <Pricing />
       </section>
 
       <FaqAccordion />

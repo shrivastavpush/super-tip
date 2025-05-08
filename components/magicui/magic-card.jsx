@@ -8,10 +8,10 @@ export function MagicCard({
   children,
   className,
   gradientSize = 200,
-  gradientColor = "#262626",
+  gradientColor = "#10b981", // emerald-500
   gradientOpacity = 0.8,
-  gradientFrom = "#9E7AFF",
-  gradientTo = "#FE8BBB"
+  gradientFrom = "#10b981", // emerald-500
+  gradientTo = "#34d399" // emerald-400
 }) {
   const cardRef = useRef(null);
   const mouseX = useMotionValue(-gradientSize);
