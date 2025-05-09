@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import { BackgroundGrid, BackgroundGridGreen } from "@/components/Common/BackgroundGrid";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import RazorPay from "@/components/razorpay/RazorPay";
 
 const Features = dynamic(() => import("@/components/Features/Features"));
 const Pricing = dynamic(() => import("@/components/Pricing"));
